@@ -208,7 +208,7 @@ function renderCard(e) {
       </div>
       <div class="event-right">
         <span class="priority-badge ${getPriorityCls(e.priority)}">${pLabel}</span>
-        <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Cal</a>
+        <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Calendar</a>
       </div>
     </div>
   `;
