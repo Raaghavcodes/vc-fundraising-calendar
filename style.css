@@ -3,11 +3,11 @@
    ============================================ */
 
 :root {
-  --bg-base: #f8fafc;
+  --bg-base: #f1f5f9;
   --bg-surface: #ffffff;
   --bg-elevated: #ffffff;
   --bg-glass: #ffffff;
-  --bg-glass-hover: #f1f5f9;
+  --bg-glass-hover: #f8fafc;
 
   --accent-violet: #4f46e5;
   --accent-cyan: #0284c7;
@@ -16,10 +16,10 @@
   --accent-rose: #e11d48;
 
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-secondary: #334155;
+  --text-muted: #475569;
 
-  --border-subtle: #e2e8f0;
+  --border-subtle: #cbd5e1;
   --border-active: #818cf8;
 
   --radius-sm: 8px;
@@ -285,7 +285,8 @@ body::after {
   border-radius: var(--radius-md);
   border: 1px solid var(--border-subtle);
   background: var(--bg-glass);
-  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  margin-bottom: 12px;
   cursor: pointer;
   transition: all var(--transition);
   position: relative;
@@ -303,8 +304,8 @@ body::after {
 .event-card:hover {
   background: var(--bg-glass-hover);
   border-color: var(--border-active);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
 /* Left rail stripe color by event type */
@@ -414,10 +415,14 @@ body::after {
 
 /* Past events dimmed */
 .event-card.past {
-  opacity: 0.45;
+  opacity: 0.85;
+  background: #f8fafc;
+}
+.event-card.past .event-date-box {
+  background: #f1f5f9;
 }
 .event-card.past:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 /* ============================================
