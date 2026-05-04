@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=lightmode2" />
+  <link rel="stylesheet" href="style.css?v=gcal" />
 </head>
 <body>
   <!-- Header -->
@@ -82,7 +82,10 @@
       <h2 class="modal-title" id="modal-title"></h2>
       <div class="modal-meta" id="modal-meta"></div>
       <p class="modal-desc" id="modal-desc"></p>
-      <a class="modal-cta" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Apply / Learn More →</a>
+      <div class="modal-actions">
+        <a class="modal-cta" id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Apply / Learn More →</a>
+        <a class="modal-cta-gcal" id="modal-gcal" href="#" target="_blank" rel="noopener noreferrer">📅 Add to Google Calendar</a>
+      </div>
     </div>
   </div>
 
@@ -90,6 +93,6 @@
     <p>Dates marked <em>Estimated</em> are based on historical patterns. Always verify on official program websites. Last updated May 2026.</p>
   </footer>
 
-  <script src="app.js?v=lightmode"></script>
+  <script src="app.js?v=gcal"></script>
 </body>
 </html>

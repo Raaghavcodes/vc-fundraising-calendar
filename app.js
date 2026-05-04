@@ -114,6 +114,24 @@ function isPast(dateStr) {
   return parseDate(dateStr) < TODAY;
 }
 
+function buildGoogleCalUrl(e) {
+  const d = parseDate(e.date);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  const dateStr = `${y}${m}${day}`;
+  // All-day event: end date is the next day
+  const next = new Date(d);
+  next.setDate(next.getDate() + 1);
+  const ny = next.getFullYear();
+  const nm = String(next.getMonth() + 1).padStart(2, '0');
+  const nd = String(next.getDate()).padStart(2, '0');
+  const endStr = `${ny}${nm}${nd}`;
+  const title = encodeURIComponent(e.title.replace(/ \[(HIGH PRIORITY|MEDIUM|NICHE)\]$/, ''));
+  const details = encodeURIComponent(e.desc + '\n\n' + e.link);
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dateStr}/${endStr}&details=${details}`;
+}
+
 function groupByMonth(events) {
   const groups = {};
   events.forEach(e => {
@@ -172,6 +190,7 @@ function renderCard(e) {
   const {month, day} = formatDateBox(e.date);
   const past = isPast(e.date) ? 'past' : '';
   const pLabel = e.priority === 'HIGH PRIORITY' ? 'HIGH' : e.priority === 'MEDIUM' ? 'MED' : 'NICHE';
+  const gcalUrl = buildGoogleCalUrl(e);
   return `
     <div class="event-card ${past}" data-type="${e.type}" data-id="${e.id}">
       <div class="event-date-box">
@@ -184,6 +203,7 @@ function renderCard(e) {
         <div class="event-meta-row">
           <span class="event-org">${e.org}</span>
           <span class="event-type-badge ${getTypeCls(e.type)}">${e.type}</span>
+          <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Calendar</a>
         </div>
         <div class="event-desc-short">${e.desc}</div>
       </div>
@@ -223,6 +243,7 @@ function openModal(id) {
   `;
   document.getElementById('modal-desc').textContent = e.desc;
   document.getElementById('modal-link').href = e.link;
+  document.getElementById('modal-gcal').href = buildGoogleCalUrl(e);
   overlay.style.display = 'flex';
 }
 
