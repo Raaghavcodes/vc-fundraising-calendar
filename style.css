@@ -413,10 +413,12 @@ body::after {
   transform: translateY(-1px);
 }
 
-/* Right priority badge */
-.event-priority {
+/* Right column: priority + calendar */
+.event-right {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
   padding-top: 2px;
 }
 .priority-badge {
@@ -629,7 +631,7 @@ body::after {
   .event-card {
     grid-template-columns: 56px 1fr;
   }
-  .event-priority { display: none; }
+  .event-right { display: none; }
   .event-title { font-size: 14px; }
   .modal-card { padding: 24px 18px; }
 }

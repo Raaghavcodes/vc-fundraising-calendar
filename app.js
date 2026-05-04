@@ -203,12 +203,12 @@ function renderCard(e) {
         <div class="event-meta-row">
           <span class="event-org">${e.org}</span>
           <span class="event-type-badge ${getTypeCls(e.type)}">${e.type}</span>
-          <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Calendar</a>
         </div>
         <div class="event-desc-short">${e.desc}</div>
       </div>
-      <div class="event-priority">
+      <div class="event-right">
         <span class="priority-badge ${getPriorityCls(e.priority)}">${pLabel}</span>
+        <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Cal</a>
       </div>
     </div>
   `;
