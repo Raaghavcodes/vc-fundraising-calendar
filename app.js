@@ -85,6 +85,39 @@ const EVENTS = [
   // ── SOUTH PARK COMMONS ────────────────────────────────────────
   { id:'spc-open', title:'SPC Founder Fellowship – Fall Applications [HIGH PRIORITY]', date:'2026-08-01', type:'Application Open', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Elite -1 to 0 community for technical founders. $400K for 7% or $1M for 10% via the Founder Fellowship. Highly selective.', link:'https://www.southparkcommons.com/fellowship', priority:'HIGH PRIORITY', estimated:true },
   { id:'spc-deadline', title:'SPC Founder Fellowship – Application Deadline [HIGH PRIORITY]', date:'2026-09-15', type:'Application Deadline', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Estimated deadline for the Fall Founder Fellowship. SPC focuses on giving founders a safe space to explore ideas before incorporating.', link:'https://www.southparkcommons.com', priority:'HIGH PRIORITY', estimated:true },
+
+  // ── FOUNDERS, INC. ────────────────────────────────────────────
+  { id:'finc-open', title:'Founders, Inc. – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Founders, Inc. Lab', org:'Founders, Inc.', desc:'San Francisco-based lab for early-stage builders. $100K–$250K investment for 5-7% equity. Focus on frontier tech, AI, and SaaS.', link:'https://finc.com', priority:'MEDIUM', estimated:true },
+
+  // ── BERKELEY SKYDECK ──────────────────────────────────────────
+  { id:'skydeck-open', title:'Berkeley SkyDeck – Fall Cohort [MEDIUM]', date:'2026-08-01', type:'Application Open', program:'Berkeley SkyDeck Cohort Program', org:'Berkeley SkyDeck', desc:'$200K for 7.5% from the SkyDeck Fund. Extensive UC Berkeley network, mentorship, and resources for tech startups.', link:'https://skydeck.berkeley.edu', priority:'MEDIUM', estimated:true },
+
+  // ── GREYLOCK EDGE ─────────────────────────────────────────────
+  { id:'greylock-edge-open', title:'Greylock Edge – Rolling Applications [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Greylock Edge', org:'Greylock Partners', desc:'Company-building program for pre-idea/early founders. Uncapped SAFE + $500K in credits. Direct access to Greylock partners.', link:'https://greylock.com/edge/', priority:'HIGH PRIORITY', estimated:true },
+
+  // ── FOUNDER INSTITUTE ─────────────────────────────────────────
+  { id:'fi-open', title:'Founder Institute – Core Program [NICHE]', date:'2026-07-01', type:'Application Open', program:'Founder Institute 2026', org:'Founder Institute', desc:'Pre-seed accelerator with global chapters. Equity-based program with varying fees. Great for very early validation and network.', link:'https://fi.co', priority:'NICHE', estimated:true },
+
+  // ── PLUG AND PLAY ─────────────────────────────────────────────
+  { id:'pnp-open', title:'Plug and Play Tech Center – Rolling Intake [MEDIUM]', date:'2026-06-15', type:'Application Open', program:'Plug and Play Accelerator', org:'Plug and Play', desc:'Corporate innovation platform and VC. Investments range from $25K to $500K. Strong enterprise pilot opportunities.', link:'https://www.plugandplaytechcenter.com', priority:'MEDIUM', estimated:true },
+
+  // ── SEEDCAMP ──────────────────────────────────────────────────
+  { id:'seedcamp-open', title:'Seedcamp – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Seedcamp', org:'Seedcamp', desc:'Europe\'s leading seed fund. £250K-£1M for 10-15%. Strong network for SaaS, fintech, and AI expanding to or from Europe.', link:'https://seedcamp.com', priority:'MEDIUM', estimated:true },
+
+  // ── AFORE CAPITAL ─────────────────────────────────────────────
+  { id:'afore-open', title:'Afore Capital – Zero-to-One Program [MEDIUM]', date:'2026-05-15', type:'Application Open', program:'Afore Zero-to-One', org:'Afore Capital', desc:'Dedicated pre-seed fund. $1M investment for ~10%. Focuses strictly on product-centric founders at the earliest stages.', link:'https://www.afore.vc', priority:'MEDIUM', estimated:true },
+
+  // ── LAUNCH ACCELERATOR ────────────────────────────────────────
+  { id:'launch-open', title:'LAUNCH Accelerator – Cohort 35 Applications [MEDIUM]', date:'2026-07-01', type:'Application Open', program:'LAUNCH Accelerator', org:'LAUNCH (Jason Calacanis)', desc:'14-week program for startups with some traction. $125K for 6-7%. Heavy focus on growth and fundraising prep.', link:'https://www.launchaccelerator.co', priority:'MEDIUM', estimated:true },
+
+  // ── CONVICTION EMBED ──────────────────────────────────────────
+  { id:'conviction-open', title:'Conviction Embed – AI Program [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Conviction Embed', org:'Conviction (Sarah Guo)', desc:'Immersive AI program. $150K investment + office space in SF + compute access. Highly selective for top AI builders.', link:'https://www.conviction.com', priority:'HIGH PRIORITY', estimated:true },
+
+  // ── AI2 INCUBATOR ─────────────────────────────────────────────
+  { id:'ai2-open', title:'AI2 Incubator – Rolling Intake [NICHE]', date:'2026-06-01', type:'Application Open', program:'AI2 Incubator', org:'Allen Institute for AI', desc:'Seattle-based AI incubator. Pre-seed/Seed funding ranging from $50K to $600K. Unmatched technical AI talent and resources.', link:'https://www.ai2incubator.com', priority:'NICHE', estimated:true },
+
+  // ── ENTREPRENEURS ROUNDTABLE ACCELERATOR (ERA) ────────────────
+  { id:'era-open', title:'ERA NYC – Winter Cohort [MEDIUM]', date:'2026-09-01', type:'Application Open', program:'Entrepreneurs Roundtable Accelerator', org:'ERA', desc:'Top NYC accelerator. $150K for 6% + $320K in partner credits. 4-month program with massive mentor network.', link:'https://www.eranyc.com', priority:'MEDIUM', estimated:true },
 ];
 
 // ── Helpers ──────────────────────────────────────────────────────
