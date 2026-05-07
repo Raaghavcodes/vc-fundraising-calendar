@@ -32,92 +32,86 @@ const EVENTS = [
   { id:'pearx-s26-end', title:'PearX S26 – Demo Day [MEDIUM]', date:'2026-09-25', type:'Program End', program:'PearX Summer 2026', org:'Pear VC', desc:'PearX Demo Day with curated investor audience from top SaaS-focused VCs.', link:'https://www.pear.vc/pearx', priority:'MEDIUM', estimated:true },
 
   // ── ANTLER US ─────────────────────────────────────────────────
-  { id:'antler-us-open', title:'Antler US – Rolling Applications Open [MEDIUM]', date:'2026-05-01', type:'Application Open', program:'Antler US 2026', org:'Antler', desc:'Antler runs rolling intake for its NYC residency. Pre-idea and pre-team founders welcome. $250K for 10% equity.', link:'https://www.antler.co/location/usa', priority:'MEDIUM', estimated:false },
-  { id:'antler-us-start', title:'Antler US – Cohort Kick-off [MEDIUM]', date:'2026-07-07', type:'Program Start', program:'Antler US 2026', org:'Antler', desc:'Estimated next cohort start in New York. 10-week residency to form teams, validate ideas, and receive seed investment.', link:'https://www.antler.co/location/usa', priority:'MEDIUM', estimated:true },
+  { id:'antler-us-open', title:'Antler US – Rolling Applications Open [MEDIUM]', date:'2026-05-01', type:'Application Open', program:'Antler US', org:'Antler', desc:'Antler runs rolling intake for its NYC residency. Pre-idea and pre-team founders welcome. $250K for 10% equity.', link:'https://www.antler.co/location/usa', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── HF0 ───────────────────────────────────────────────────────
-  { id:'hf0-open', title:'HF0 Residency – Rolling Applications [HIGH PRIORITY]', date:'2026-05-01', type:'Application Open', program:'HF0 Residency 2026', org:'HF0', desc:'Highly selective 12-week SF residency for technical repeat founders. $1M uncapped SAFE for 5%. ~1% acceptance rate.', link:'https://www.hf0.com/apply', priority:'HIGH PRIORITY', estimated:false },
-  { id:'hf0-start', title:'HF0 Residency – Next Cohort Start [HIGH PRIORITY]', date:'2026-08-01', type:'Program Start', program:'HF0 Residency 2026', org:'HF0', desc:'Estimated next cohort. Residential in San Francisco, intense focus on shipping and technical depth.', link:'https://www.hf0.com', priority:'HIGH PRIORITY', estimated:true },
+  { id:'hf0-open', title:'HF0 Residency – Rolling Applications [HIGH PRIORITY]', date:'2026-05-01', type:'Application Open', program:'HF0 Residency', org:'HF0', desc:'Highly selective 12-week SF residency for technical repeat founders. $1M uncapped SAFE for 5%. ~1% acceptance rate.', link:'https://www.hf0.com/apply', priority:'HIGH PRIORITY', estimated:false, rolling:true },
 
   // ── NEO ───────────────────────────────────────────────────────
-  { id:'neo-open', title:'Neo Residency – Rolling Applications [HIGH PRIORITY]', date:'2026-05-01', type:'Application Open', program:'Neo Residency 2026', org:'Neo', desc:'3-month SF accelerator. $750K uncapped SAFE + $450K+ in cloud credits. For startup teams and student builders.', link:'https://neo.com', priority:'HIGH PRIORITY', estimated:false },
-  { id:'neo-start', title:'Neo Residency – Next Cohort Start [HIGH PRIORITY]', date:'2026-09-01', type:'Program Start', program:'Neo Residency 2026', org:'Neo', desc:'Immersive SF residency begins. Founders get direct access to top-tier investors and technical mentors.', link:'https://neo.com', priority:'HIGH PRIORITY', estimated:true },
+  { id:'neo-open', title:'Neo Residency – Rolling Applications [HIGH PRIORITY]', date:'2026-05-01', type:'Application Open', program:'Neo Residency', org:'Neo', desc:'3-month SF accelerator. $750K uncapped SAFE + $450K+ in cloud credits. For startup teams and student builders.', link:'https://neo.com', priority:'HIGH PRIORITY', estimated:false, rolling:true },
 
   // ── FORUM VENTURES ────────────────────────────────────────────
-  { id:'forum-open', title:'Forum Ventures – Rolling B2B SaaS Applications [MEDIUM]', date:'2026-05-01', type:'Application Open', program:'Forum Ventures 2026', org:'Forum Ventures', desc:'Rolling intake B2B SaaS-focused accelerator. Pre-seed, $250K check. One of the most SaaS-specific programs in the US.', link:'https://www.forumvc.com', priority:'MEDIUM', estimated:false },
-  { id:'forum-fall-start', title:'Forum Ventures – Fall Cohort Start [MEDIUM]', date:'2026-09-08', type:'Program Start', program:'Forum Ventures Fall 2026', org:'Forum Ventures', desc:'Estimated fall cohort. 12 weeks of B2B SaaS-specific mentorship, GTM support, and customer intros.', link:'https://www.forumvc.com', priority:'MEDIUM', estimated:true },
+  { id:'forum-open', title:'Forum Ventures – Rolling B2B SaaS Applications [MEDIUM]', date:'2026-05-01', type:'Application Open', program:'Forum Ventures', org:'Forum Ventures', desc:'Rolling intake B2B SaaS-focused accelerator. Pre-seed, $250K check. One of the most SaaS-specific programs in the US.', link:'https://www.forumvc.com', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── 500 GLOBAL ────────────────────────────────────────────────
-  { id:'500-open', title:'500 Global – US Accelerator Applications [MEDIUM]', date:'2026-07-01', type:'Application Open', program:'500 Global Accelerator 2026', org:'500 Global', desc:'Rolling applications for 500 Global flagship batch. $150K for 6%. Strong network in SaaS, fintech, and growth-stage.', link:'https://500.co/accelerators', priority:'MEDIUM', estimated:true },
-  { id:'500-deadline', title:'500 Global – Application Deadline [MEDIUM]', date:'2026-09-01', type:'Application Deadline', program:'500 Global Accelerator 2026', org:'500 Global', desc:'Estimated batch deadline. Check 500.co for current open batches and region-specific timelines.', link:'https://500.co/accelerators', priority:'MEDIUM', estimated:true },
+  { id:'500-open', title:'500 Global – US Accelerator Applications [MEDIUM]', date:'2026-07-01', type:'Application Open', program:'500 Global Accelerator', org:'500 Global', desc:'Rolling applications for 500 Global flagship batch. $150K for 6%. Strong network in SaaS, fintech, and growth-stage.', link:'https://500.co/accelerators', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── GOOGLE FOR STARTUPS ───────────────────────────────────────
   { id:'gfs-open', title:'Google for Startups Accelerator – AI Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Google for Startups Accelerator 2026', org:'Google', desc:'Equity-free 10-week accelerator for AI-first startups. Up to $350K in cloud credits + Google expert mentorship.', link:'https://startup.google.com/accelerator/', priority:'MEDIUM', estimated:true },
   { id:'gfs-deadline', title:'Google for Startups Accelerator – Application Deadline [MEDIUM]', date:'2026-07-31', type:'Application Deadline', program:'Google for Startups Accelerator 2026', org:'Google', desc:'Estimated deadline for next US cohort. Equity-free with Google engineer mentors and Cloud credits.', link:'https://startup.google.com', priority:'MEDIUM', estimated:true },
 
   // ── MICROSOFT FOR STARTUPS ────────────────────────────────────
-  { id:'msft-open', title:'Microsoft for Startups Founders Hub – Always Open [MEDIUM]', date:'2026-05-05', type:'Application Open', program:'Microsoft for Startups Founders Hub', org:'Microsoft', desc:'Always-on program. $150K+ in Azure credits, GitHub, OpenAI API access. No pitch required — milestone-based.', link:'https://www.microsoft.com/en-us/startups', priority:'MEDIUM', estimated:false },
+  { id:'msft-open', title:'Microsoft for Startups Founders Hub – Always Open [MEDIUM]', date:'2026-05-05', type:'Application Open', program:'Microsoft for Startups Founders Hub', org:'Microsoft', desc:'Always-on program. $150K+ in Azure credits, GitHub, OpenAI API access. No pitch required — milestone-based.', link:'https://www.microsoft.com/en-us/startups', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── AWS ACTIVATE ──────────────────────────────────────────────
-  { id:'aws-open', title:'AWS Activate Portfolio – Always Open [MEDIUM]', date:'2026-05-05', type:'Application Open', program:'AWS Activate Portfolio 2026', org:'Amazon Web Services', desc:'Up to $100K in AWS credits for pre-Series B startups affiliated with approved accelerators or VCs. Instant infra boost.', link:'https://aws.amazon.com/activate', priority:'MEDIUM', estimated:false },
+  { id:'aws-open', title:'AWS Activate Portfolio – Always Open [MEDIUM]', date:'2026-05-05', type:'Application Open', program:'AWS Activate Portfolio', org:'Amazon Web Services', desc:'Up to $100K in AWS credits for pre-Series B startups affiliated with approved accelerators or VCs. Instant infra boost.', link:'https://aws.amazon.com/activate', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── SOMA CAPITAL ─────────────────────────────────────────────
-  { id:'soma-open', title:'Soma Capital – Rolling Pre-Seed Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Soma Capital 2026', org:'Soma Capital', desc:'YC-heavy seed fund. $100K–$1M uncapped SAFE for SaaS/B2B/AI. Fast decisions, founder-friendly terms, warm intro preferred.', link:'https://www.somacapital.com', priority:'NICHE', estimated:false },
+  { id:'soma-open', title:'Soma Capital – Rolling Pre-Seed Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Soma Capital', org:'Soma Capital', desc:'YC-heavy seed fund. $100K–$1M uncapped SAFE for SaaS/B2B/AI. Fast decisions, founder-friendly terms, warm intro preferred.', link:'https://www.somacapital.com', priority:'NICHE', estimated:false, rolling:true },
 
   // ── FIRST ROUND FAST TRACK ────────────────────────────────────
   { id:'fr-open', title:'First Round Fast Track – Application Open [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'First Round Fast Track 2026', org:'First Round Capital', desc:'Structured seed program with direct introductions to First Round\'s portfolio network. For pre-seed B2B SaaS founders.', link:'https://fasttrack.firstround.com', priority:'HIGH PRIORITY', estimated:true },
-  { id:'fr-deadline', title:'First Round Fast Track – Application Deadline [HIGH PRIORITY]', date:'2026-07-15', type:'Application Deadline', program:'First Round Fast Track 2026', org:'First Round Capital', desc:'Estimated deadline for H2 cohort. First Round is known for founder-first culture and strong enterprise SaaS network.', link:'https://fasttrack.firstround.com', priority:'HIGH PRIORITY', estimated:true },
+  { id:'fr-deadline', title:'First Round Fast Track – Application Deadline (ESTIMATE: UNPUBLISHED DATES) [HIGH PRIORITY]', date:'2026-07-15', type:'Application Deadline', program:'First Round Fast Track 2026', org:'First Round Capital', desc:'Estimated deadline for H2 cohort. First Round is known for founder-first culture and strong enterprise SaaS network.', link:'https://fasttrack.firstround.com', priority:'HIGH PRIORITY', estimated:true },
 
   // ── PIONEER ───────────────────────────────────────────────────
-  { id:'pioneer-open', title:'Pioneer Tournament – Monthly Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Pioneer Tournament 2026', org:'Pioneer', desc:'Monthly online tournament for early-stage founders worldwide. Winners get $10K + community access. Rolling monthly.', link:'https://pioneer.app', priority:'NICHE', estimated:false },
+  { id:'pioneer-open', title:'Pioneer Tournament – Monthly Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Pioneer Tournament', org:'Pioneer', desc:'Monthly online tournament for early-stage founders worldwide. Winners get $10K + community access. Rolling monthly.', link:'https://pioneer.app', priority:'NICHE', estimated:false, rolling:true },
 
   // ── ENTREPRENEUR FIRST ────────────────────────────────────────
-  { id:'ef-open', title:'Entrepreneur First US – Rolling Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Entrepreneur First US 2026', org:'Entrepreneur First', desc:'Pre-team, pre-idea talent investor. Matches technical co-founders and funds team formation. $150K investment.', link:'https://www.joinef.com', priority:'NICHE', estimated:false },
-  { id:'ef-start', title:'Entrepreneur First US – Cohort Start [NICHE]', date:'2026-09-01', type:'Program Start', program:'Entrepreneur First US 2026', org:'Entrepreneur First', desc:'Estimated next US cohort. 3-month in-residence program for solo founders seeking technical co-founders.', link:'https://www.joinef.com', priority:'NICHE', estimated:true },
+  { id:'ef-open', title:'Entrepreneur First US – Rolling Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Entrepreneur First US', org:'Entrepreneur First', desc:'Pre-team, pre-idea talent investor. Matches technical co-founders and funds team formation. $150K investment.', link:'https://www.joinef.com', priority:'NICHE', estimated:false, rolling:true },
 
   // ── LSVP IGNITION ─────────────────────────────────────────────
   { id:'lsvp-open', title:'LSVP Ignition – Application Open [NICHE]', date:'2026-07-01', type:'Application Open', program:'LSVP Ignition 2026', org:'Lightspeed Venture Partners', desc:'Lightspeed\'s early-stage SaaS program. Intensive mentorship, direct access to Lightspeed partners, potential seed investment.', link:'https://lsvp.com/ignition', priority:'NICHE', estimated:true },
-  { id:'lsvp-deadline', title:'LSVP Ignition – Application Deadline [NICHE]', date:'2026-08-15', type:'Application Deadline', program:'LSVP Ignition 2026', org:'Lightspeed Venture Partners', desc:'Estimated deadline. Lightspeed focuses on enterprise SaaS and AI-native companies at the seed stage.', link:'https://lsvp.com', priority:'NICHE', estimated:true },
+  { id:'lsvp-deadline', title:'LSVP Ignition – Application Deadline (ESTIMATE: UNPUBLISHED DATES) [NICHE]', date:'2026-08-15', type:'Application Deadline', program:'LSVP Ignition 2026', org:'Lightspeed Venture Partners', desc:'Estimated deadline. Lightspeed focuses on enterprise SaaS and AI-native companies at the seed stage.', link:'https://lsvp.com', priority:'NICHE', estimated:true },
 
   // ── BOOST VC ──────────────────────────────────────────────────
-  { id:'boost-open', title:'Boost VC – Tribe Rolling Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Boost VC Tribe 2026', org:'Boost VC', desc:'SF-based accelerator focused on frontier tech. $500K investment. Rolling intake for deep-tech and SaaS hybrid founders.', link:'https://www.boost.vc', priority:'NICHE', estimated:false },
+  { id:'boost-open', title:'Boost VC – Tribe Rolling Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Boost VC Tribe', org:'Boost VC', desc:'SF-based accelerator focused on frontier tech. $500K investment. Rolling intake for deep-tech and SaaS hybrid founders.', link:'https://www.boost.vc', priority:'NICHE', estimated:false, rolling:true },
 
   // ── SOUTH PARK COMMONS ────────────────────────────────────────
-  { id:'spc-open', title:'SPC Founder Fellowship – Fall Applications [HIGH PRIORITY]', date:'2026-08-01', type:'Application Open', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Elite -1 to 0 community for technical founders. $400K for 7% or $1M for 10% via the Founder Fellowship. Highly selective.', link:'https://www.southparkcommons.com/fellowship', priority:'HIGH PRIORITY', estimated:true },
-  { id:'spc-deadline', title:'SPC Founder Fellowship – Application Deadline [HIGH PRIORITY]', date:'2026-09-15', type:'Application Deadline', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Estimated deadline for the Fall Founder Fellowship. SPC focuses on giving founders a safe space to explore ideas before incorporating.', link:'https://www.southparkcommons.com', priority:'HIGH PRIORITY', estimated:true },
+  { id:'spc-open', title:'SPC Founder Fellowship – Fall Applications (ESTIMATE: UNPUBLISHED DATES) [HIGH PRIORITY]', date:'2026-08-01', type:'Application Open', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Elite -1 to 0 community for technical founders. $400K for 7% or $1M for 10% via the Founder Fellowship. Highly selective.', link:'https://www.southparkcommons.com/fellowship', priority:'HIGH PRIORITY', estimated:true },
+  { id:'spc-deadline', title:'SPC Founder Fellowship – Application Deadline (ESTIMATE: UNPUBLISHED DATES) [HIGH PRIORITY]', date:'2026-09-15', type:'Application Deadline', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Estimated deadline for the Fall Founder Fellowship. SPC focuses on giving founders a safe space to explore ideas before incorporating.', link:'https://www.southparkcommons.com', priority:'HIGH PRIORITY', estimated:true },
 
   // ── FOUNDERS, INC. ────────────────────────────────────────────
-  { id:'finc-open', title:'Founders, Inc. – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Founders, Inc. Lab', org:'Founders, Inc.', desc:'San Francisco-based lab for early-stage builders. $100K–$250K investment for 5-7% equity. Focus on frontier tech, AI, and SaaS.', link:'https://finc.com', priority:'MEDIUM', estimated:true },
+  { id:'finc-open', title:'Founders, Inc. – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Founders, Inc. Lab', org:'Founders, Inc.', desc:'San Francisco-based lab for early-stage builders. $100K–$250K investment for 5-7% equity. Focus on frontier tech, AI, and SaaS.', link:'https://finc.com', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── BERKELEY SKYDECK ──────────────────────────────────────────
-  { id:'skydeck-open', title:'Berkeley SkyDeck – Fall Cohort [MEDIUM]', date:'2026-08-01', type:'Application Open', program:'Berkeley SkyDeck Cohort Program', org:'Berkeley SkyDeck', desc:'$200K for 7.5% from the SkyDeck Fund. Extensive UC Berkeley network, mentorship, and resources for tech startups.', link:'https://skydeck.berkeley.edu', priority:'MEDIUM', estimated:true },
+  { id:'skydeck-open', title:'Berkeley SkyDeck – Fall Cohort (ESTIMATE: UNPUBLISHED DATES) [MEDIUM]', date:'2026-08-01', type:'Application Open', program:'Berkeley SkyDeck Cohort Program', org:'Berkeley SkyDeck', desc:'$200K for 7.5% from the SkyDeck Fund. Extensive UC Berkeley network, mentorship, and resources for tech startups.', link:'https://skydeck.berkeley.edu', priority:'MEDIUM', estimated:true },
 
   // ── GREYLOCK EDGE ─────────────────────────────────────────────
-  { id:'greylock-edge-open', title:'Greylock Edge – Rolling Applications [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Greylock Edge', org:'Greylock Partners', desc:'Company-building program for pre-idea/early founders. Uncapped SAFE + $500K in credits. Direct access to Greylock partners.', link:'https://greylock.com/edge/', priority:'HIGH PRIORITY', estimated:true },
+  { id:'greylock-edge-open', title:'Greylock Edge – Rolling Applications [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Greylock Edge', org:'Greylock Partners', desc:'Company-building program for pre-idea/early founders. Uncapped SAFE + $500K in credits. Direct access to Greylock partners.', link:'https://greylock.com/edge/', priority:'HIGH PRIORITY', estimated:false, rolling:true },
 
   // ── FOUNDER INSTITUTE ─────────────────────────────────────────
-  { id:'fi-open', title:'Founder Institute – Core Program [NICHE]', date:'2026-07-01', type:'Application Open', program:'Founder Institute 2026', org:'Founder Institute', desc:'Pre-seed accelerator with global chapters. Equity-based program with varying fees. Great for very early validation and network.', link:'https://fi.co', priority:'NICHE', estimated:true },
+  { id:'fi-open', title:'Founder Institute – Core Program (ESTIMATE: LOCAL DATES VARY) [NICHE]', date:'2026-07-01', type:'Application Open', program:'Founder Institute 2026', org:'Founder Institute', desc:'Pre-seed accelerator with global chapters. Equity-based program with varying fees. Great for very early validation and network.', link:'https://fi.co', priority:'NICHE', estimated:true },
 
   // ── PLUG AND PLAY ─────────────────────────────────────────────
-  { id:'pnp-open', title:'Plug and Play Tech Center – Rolling Intake [MEDIUM]', date:'2026-06-15', type:'Application Open', program:'Plug and Play Accelerator', org:'Plug and Play', desc:'Corporate innovation platform and VC. Investments range from $25K to $500K. Strong enterprise pilot opportunities.', link:'https://www.plugandplaytechcenter.com', priority:'MEDIUM', estimated:true },
+  { id:'pnp-open', title:'Plug and Play Tech Center – Rolling Intake [MEDIUM]', date:'2026-06-15', type:'Application Open', program:'Plug and Play Accelerator', org:'Plug and Play', desc:'Corporate innovation platform and VC. Investments range from $25K to $500K. Strong enterprise pilot opportunities.', link:'https://www.plugandplaytechcenter.com', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── SEEDCAMP ──────────────────────────────────────────────────
-  { id:'seedcamp-open', title:'Seedcamp – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Seedcamp', org:'Seedcamp', desc:'Europe\'s leading seed fund. £250K-£1M for 10-15%. Strong network for SaaS, fintech, and AI expanding to or from Europe.', link:'https://seedcamp.com', priority:'MEDIUM', estimated:true },
+  { id:'seedcamp-open', title:'Seedcamp – Rolling Applications [MEDIUM]', date:'2026-06-01', type:'Application Open', program:'Seedcamp', org:'Seedcamp', desc:'Europe\'s leading seed fund. £250K-£1M for 10-15%. Strong network for SaaS, fintech, and AI expanding to or from Europe.', link:'https://seedcamp.com', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── AFORE CAPITAL ─────────────────────────────────────────────
-  { id:'afore-open', title:'Afore Capital – Zero-to-One Program [MEDIUM]', date:'2026-05-15', type:'Application Open', program:'Afore Zero-to-One', org:'Afore Capital', desc:'Dedicated pre-seed fund. $1M investment for ~10%. Focuses strictly on product-centric founders at the earliest stages.', link:'https://www.afore.vc', priority:'MEDIUM', estimated:true },
+  { id:'afore-open', title:'Afore Capital – Zero-to-One Program [MEDIUM]', date:'2026-05-15', type:'Application Open', program:'Afore Zero-to-One', org:'Afore Capital', desc:'Dedicated pre-seed fund. $1M investment for ~10%. Focuses strictly on product-centric founders at the earliest stages.', link:'https://www.afore.vc', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── LAUNCH ACCELERATOR ────────────────────────────────────────
-  { id:'launch-open', title:'LAUNCH Accelerator – Cohort 35 Applications [MEDIUM]', date:'2026-07-01', type:'Application Open', program:'LAUNCH Accelerator', org:'LAUNCH (Jason Calacanis)', desc:'14-week program for startups with some traction. $125K for 6-7%. Heavy focus on growth and fundraising prep.', link:'https://www.launchaccelerator.co', priority:'MEDIUM', estimated:true },
+  { id:'launch-open', title:'LAUNCH Accelerator – Cohort 35 Applications [MEDIUM]', date:'2026-07-01', type:'Application Open', program:'LAUNCH Accelerator', org:'LAUNCH (Jason Calacanis)', desc:'14-week program for startups with some traction. $125K for 6-7%. Heavy focus on growth and fundraising prep.', link:'https://www.launchaccelerator.co', priority:'MEDIUM', estimated:false, rolling:true },
 
   // ── CONVICTION EMBED ──────────────────────────────────────────
-  { id:'conviction-open', title:'Conviction Embed – AI Program [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Conviction Embed', org:'Conviction (Sarah Guo)', desc:'Immersive AI program. $150K investment + office space in SF + compute access. Highly selective for top AI builders.', link:'https://www.conviction.com', priority:'HIGH PRIORITY', estimated:true },
+  { id:'conviction-open', title:'Conviction Embed – AI Program (ESTIMATE: UNPUBLISHED DATES) [HIGH PRIORITY]', date:'2026-06-01', type:'Application Open', program:'Conviction Embed', org:'Conviction (Sarah Guo)', desc:'Immersive AI program. $150K investment + office space in SF + compute access. Highly selective for top AI builders.', link:'https://www.conviction.com', priority:'HIGH PRIORITY', estimated:true },
 
   // ── AI2 INCUBATOR ─────────────────────────────────────────────
-  { id:'ai2-open', title:'AI2 Incubator – Rolling Intake [NICHE]', date:'2026-06-01', type:'Application Open', program:'AI2 Incubator', org:'Allen Institute for AI', desc:'Seattle-based AI incubator. Pre-seed/Seed funding ranging from $50K to $600K. Unmatched technical AI talent and resources.', link:'https://www.ai2incubator.com', priority:'NICHE', estimated:true },
+  { id:'ai2-open', title:'AI2 Incubator – Rolling Intake [NICHE]', date:'2026-06-01', type:'Application Open', program:'AI2 Incubator', org:'Allen Institute for AI', desc:'Seattle-based AI incubator. Pre-seed/Seed funding ranging from $50K to $600K. Unmatched technical AI talent and resources.', link:'https://www.ai2incubator.com', priority:'NICHE', estimated:false, rolling:true },
 
   // ── ENTREPRENEURS ROUNDTABLE ACCELERATOR (ERA) ────────────────
-  { id:'era-open', title:'ERA NYC – Winter Cohort [MEDIUM]', date:'2026-09-01', type:'Application Open', program:'Entrepreneurs Roundtable Accelerator', org:'ERA', desc:'Top NYC accelerator. $150K for 6% + $320K in partner credits. 4-month program with massive mentor network.', link:'https://www.eranyc.com', priority:'MEDIUM', estimated:true },
+  { id:'era-open', title:'ERA NYC – Winter Cohort (ESTIMATE: UNPUBLISHED DATES) [MEDIUM]', date:'2026-09-01', type:'Application Open', program:'Entrepreneurs Roundtable Accelerator', org:'ERA', desc:'Top NYC accelerator. $150K for 6% + $320K in partner credits. 4-month program with massive mentor network.', link:'https://www.eranyc.com', priority:'MEDIUM', estimated:true },
 ];
 
 // ── Helpers ──────────────────────────────────────────────────────
@@ -147,8 +141,9 @@ function getPriorityCls(p) {
   return 'niche';
 }
 
-function isPast(dateStr) {
-  return parseDate(dateStr) < TODAY;
+function isPast(e) {
+  if (e.rolling) return false;
+  return parseDate(e.date) < TODAY;
 }
 
 function buildGoogleCalUrl(e) {
@@ -171,14 +166,28 @@ function buildGoogleCalUrl(e) {
 
 function groupByMonth(events) {
   const groups = {};
+  const rollingEvents = [];
+
   events.forEach(e => {
+    if (e.rolling) {
+      rollingEvents.push(e);
+      return;
+    }
     const d = parseDate(e.date);
     const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
     const label = d.toLocaleDateString('en-US', { month:'long', year:'numeric' });
     if (!groups[key]) groups[key] = { label, events:[] };
     groups[key].events.push(e);
   });
-  return Object.values(groups).sort((a,b) => a.events[0].date.localeCompare(b.events[0].date));
+
+  const sortedGroups = Object.values(groups).sort((a,b) => a.events[0].date.localeCompare(b.events[0].date));
+  
+  // Insert rolling group at the very top
+  if (rollingEvents.length > 0) {
+    sortedGroups.unshift({ label: 'Always Open / Rolling Applications', events: rollingEvents });
+  }
+
+  return sortedGroups;
 }
 
 // ── State ─────────────────────────────────────────────────────────
@@ -224,16 +233,35 @@ function render() {
 }
 
 function renderCard(e) {
-  const {month, day} = formatDateBox(e.date);
-  const past = isPast(e.date) ? 'past' : '';
+  let month = '—';
+  let day = '—';
+  let isEst = false;
+
+  if (e.rolling) {
+    month = 'NOW';
+    day = 'Open';
+  } else {
+    const d = formatDateBox(e.date);
+    month = d.month;
+    day = d.day;
+    isEst = e.estimated;
+  }
+
+  const past = isPast(e) ? 'past' : '';
   const pLabel = e.priority === 'HIGH PRIORITY' ? 'HIGH' : e.priority === 'MEDIUM' ? 'MED' : 'NICHE';
-  const gcalUrl = buildGoogleCalUrl(e);
+  
+  let gcalBtn = '';
+  if (!e.rolling) {
+    const gcalUrl = buildGoogleCalUrl(e);
+    gcalBtn = `<a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Calendar</a>`;
+  }
+
   return `
     <div class="event-card ${past}" data-type="${e.type}" data-id="${e.id}">
       <div class="event-date-box">
         <span class="event-date-month">${month}</span>
-        <span class="event-date-day">${day}</span>
-        ${e.estimated ? '<span class="event-date-est">Est.</span>' : ''}
+        <span class="event-date-day">${e.rolling ? '<span style="font-size:12px;">Rolling</span>' : day}</span>
+        ${isEst ? '<span class="event-date-est">Est.</span>' : ''}
       </div>
       <div class="event-info">
         <div class="event-title">${e.title.replace(/ \[(HIGH PRIORITY|MEDIUM|NICHE)\]$/,'')}</div>
@@ -245,14 +273,14 @@ function renderCard(e) {
       </div>
       <div class="event-right">
         <span class="priority-badge ${getPriorityCls(e.priority)}">${pLabel}</span>
-        <a href="${gcalUrl}" target="_blank" rel="noopener" class="add-to-cal" title="Add to Google Calendar" onclick="event.stopPropagation()">📅 Add to Calendar</a>
+        ${gcalBtn}
       </div>
     </div>
   `;
 }
 
 function updateStats(filtered) {
-  const upcoming = filtered.filter(e => !isPast(e.date)).length;
+  const upcoming = filtered.filter(e => !isPast(e)).length;
   const programs = new Set(filtered.map(e => e.program)).size;
   const high = filtered.filter(e => e.priority === 'HIGH PRIORITY').length;
   document.getElementById('stat-total').textContent = filtered.length;
@@ -272,15 +300,30 @@ function openModal(id) {
   badge.className = `modal-badge priority-badge ${pCls}`;
   badge.textContent = pLabel;
   document.getElementById('modal-title').textContent = e.program + ' — ' + e.type;
+  let displayDate = e.date;
+  if (e.rolling) {
+    displayDate = 'Rolling / Always Open';
+  } else if (e.estimated) {
+    displayDate = `${e.date} (Estimated)`;
+  }
+
   document.getElementById('modal-meta').innerHTML = `
-    <div class="modal-meta-row"><span class="modal-meta-label">Date</span><span class="modal-meta-value">${e.date}${e.estimated?' (Estimated)':''}</span></div>
+    <div class="modal-meta-row"><span class="modal-meta-label">Date</span><span class="modal-meta-value">${displayDate}</span></div>
     <div class="modal-meta-row"><span class="modal-meta-label">Type</span><span class="modal-meta-value">${e.type}</span></div>
     <div class="modal-meta-row"><span class="modal-meta-label">Org</span><span class="modal-meta-value">${e.org}</span></div>
     <div class="modal-meta-row"><span class="modal-meta-label">Program</span><span class="modal-meta-value">${e.program}</span></div>
   `;
   document.getElementById('modal-desc').textContent = e.desc;
   document.getElementById('modal-link').href = e.link;
-  document.getElementById('modal-gcal').href = buildGoogleCalUrl(e);
+  
+  const gcalBtn = document.getElementById('modal-gcal');
+  if (e.rolling) {
+    gcalBtn.style.display = 'none';
+  } else {
+    gcalBtn.style.display = 'inline-flex';
+    gcalBtn.href = buildGoogleCalUrl(e);
+  }
+  
   overlay.style.display = 'flex';
 }
 
