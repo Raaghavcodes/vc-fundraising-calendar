@@ -81,6 +81,10 @@ const EVENTS = [
 
   // ── BOOST VC ──────────────────────────────────────────────────
   { id:'boost-open', title:'Boost VC – Tribe Rolling Applications [NICHE]', date:'2026-05-01', type:'Application Open', program:'Boost VC Tribe 2026', org:'Boost VC', desc:'SF-based accelerator focused on frontier tech. $500K investment. Rolling intake for deep-tech and SaaS hybrid founders.', link:'https://www.boost.vc', priority:'NICHE', estimated:false },
+
+  // ── SOUTH PARK COMMONS ────────────────────────────────────────
+  { id:'spc-open', title:'SPC Founder Fellowship – Fall Applications [HIGH PRIORITY]', date:'2026-08-01', type:'Application Open', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Elite -1 to 0 community for technical founders. $400K for 7% or $1M for 10% via the Founder Fellowship. Highly selective.', link:'https://www.southparkcommons.com/fellowship', priority:'HIGH PRIORITY', estimated:true },
+  { id:'spc-deadline', title:'SPC Founder Fellowship – Application Deadline [HIGH PRIORITY]', date:'2026-09-15', type:'Application Deadline', program:'SPC Founder Fellowship 2026', org:'South Park Commons', desc:'Estimated deadline for the Fall Founder Fellowship. SPC focuses on giving founders a safe space to explore ideas before incorporating.', link:'https://www.southparkcommons.com', priority:'HIGH PRIORITY', estimated:true },
 ];
 
 // ── Helpers ──────────────────────────────────────────────────────
