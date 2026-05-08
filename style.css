@@ -384,6 +384,7 @@ body::after {
 .event-type-badge.type-deadline { background: rgba(255,92,141,0.15); color: var(--accent-rose); }
 .event-type-badge.type-start    { background: rgba(0,216,255,0.15);  color: var(--accent-cyan); }
 .event-type-badge.type-end      { background: rgba(255,169,64,0.15); color: var(--accent-amber); }
+.event-est-badge                { background: rgba(100,116,139,0.15); color: var(--text-muted); border: 1px dashed var(--border-subtle); }
 
 .event-desc-short {
   font-size: 13px;

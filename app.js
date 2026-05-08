@@ -268,6 +268,7 @@ function renderCard(e) {
         <div class="event-meta-row">
           <span class="event-org">${e.org}</span>
           <span class="event-type-badge ${getTypeCls(e.type)}">${e.type}</span>
+          ${isEst ? '<span class="event-type-badge event-est-badge">Estimated Date</span>' : ''}
         </div>
         <div class="event-desc-short">${e.desc}</div>
       </div>
