@@ -264,7 +264,7 @@ function renderCard(e) {
         ${isEst ? '<span class="event-date-est">Est.</span>' : ''}
       </div>
       <div class="event-info">
-        <div class="event-title">${e.title.replace(/ \[(HIGH PRIORITY|MEDIUM|NICHE)\]$/,'')}</div>
+        <div class="event-title">${e.title.replace(/ \(ESTIMATE:.*?\)/g,'').replace(/ \[(HIGH PRIORITY|MEDIUM|NICHE)\]$/,'')}</div>
         <div class="event-meta-row">
           <span class="event-org">${e.org}</span>
           <span class="event-type-badge ${getTypeCls(e.type)}">${e.type}</span>
